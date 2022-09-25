@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Shreyas Nellutla
+    Rental Membership Form
+    -->
+<html lang="en">
+<!-- This is the head with links to the external css stylesheet and javascript -->
+<head>
+    <meta charset="UTF-8">
+    <title>Rental Store Membership Form</title>
+    <script src="5.js"></script>
+    <link rel="stylesheet" href="5.css">
+</head>
+<!-- This is the body for a rental store membership form-->
+<body>
+    <h1>Rental Store Membership form</h1>
+    <!-- Form tag with a name and id to include all of the fields in the form. Also includes link and post method to the ectweb server to display information -->
+    <form name="memberform" id="memberform" action="http://ectweb.cs.depaul.edu/sjost/receipt.php" method="post">
+        <!-- First field for Member Name -->
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" name="name" id="name" placeholder="Name:">
+        <br><br> 
+        <!-- Field for member phone number -->
+        <label for="phonenum">Phone Number:</label>
+        <br>
+        <input type="number" name="phone number" id="phonenum" placeholder="Phone Number:">
+        <br>
+        <br><br>
+        <!-- Field for member address -->
+        <label for="address">Address</label>
+        <br>
+        <input type="text" name="address" id="address" placeholder="Address:">
+        <br><br>
+        <!-- Field for favorite rental item -->
+        <label for="preference">What is your favorite rental item?</label>
+        <br>
+        <input type="text" name="preference" id="preference" placeholder="Item:">
+        <br><br>
+        <label for="howfind"> How did you find out about us? </label>
+        <!-- select field which displays possible options of how members found out about the rental store -->
+        <br>
+        <select id="howfind" name="way found" id="howfind">
+            <option value="1">Email</option>
+            <option value="2">Local Magazine/Newspaper</option>
+            <option value="3">Neighborhood Adverstisements</option>
+            <option value="4">Friend referral</option>
+        </select>
+        <!-- Optional field that is based off the previous question -->
+        <br><br>
+        <label for="finddetail"> *Optional: If you chose a friend option in the pervious question, <br> give us their name so that we can give them a discount. <br> If not, then please type 'N/A'. </label>
+        <br>
+        <input type="text" name="friend name" id="finddetail" placeholder="Friend Name:">
+        <br><br>
+        <!-- Submit button -->
+        <input type="submit" value="Submit Form">
+    </form>
+    <br><br>
+</body>
+</html>

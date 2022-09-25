@@ -1,0 +1,40 @@
+/*
+Shreyas Nellutla
+     Rental Membership Form CSS
+     */
+
+
+/*Added styling for body tag to change the backgound color */
+body {
+    background-color:rgb(245, 228, 189);
+} 
+
+/*Added styling to the main header*/
+h1 {
+    font-family: sans-serif;
+    color: rgb(15, 112, 136);
+}
+
+/*Added a consistent font family to each of the labels of the fields*/
+label {
+    font-family: sans-serif;
+}
+
+/*Added styling for all of the input fileds so that it is consistent*/
+input {
+    width: 200px;
+    border-radius: 8px;
+    background-color:rgb(198, 234, 243);
+}
+
+/*Added styling for the dropdown select field to match with the input fields*/
+select {
+    border-radius: 8px;
+    background-color:rgb(198, 234, 243);
+}
+
+/*Added styling to the submit input button to distinguish it from the other fields */
+input[type=submit] {
+    background-color:rgb(15, 112, 136);
+    color: white;
+}
